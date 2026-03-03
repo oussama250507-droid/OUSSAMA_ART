@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oussama Art | معرض أسامة</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* خلفية متدرجة احترافية وعميقة */
+            background: radial-gradient(circle at center, #2c5364 0%, #203a43 50%, #0f2027 100%);
+            color: white;
+            text-align: center;
+            min-height: 100vh;
+            transition: background 0.5s;
+        }
+
+        header { padding: 50px 20px; }
+
+        .insta-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: 0.3s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .gallery-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 40px;
+        }
+
+        .gallery-item {
+            width: calc(33.33% - 30px);
+            height: 350px;
+            border-radius: 15px;
+            position: relative;
+            cursor: pointer;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            /* تأثير الإطار الجمالي */
+            border: 8px solid white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        /* التأثير السحري عند وضع الفأرة */
+        .gallery-container:hover .gallery-item:not(:hover) {
+            filter: brightness(0.4) blur(2px); /* تظليل باقي الصور */
+            transform: scale(0.9); /* تصغير باقي الصور قليلاً */
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.1) rotate(2deg); /* تكبير الصورة المحددة وإمالتها */
+            z-index: 10;
+            border-color: #ff4bb4; /* تغيير لون الإطار عند الاختيار */
+            box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+        }
+
+        @media (max-width: 900px) { .gallery-item { width: calc(50% - 30px); } }
+        @media (max-width: 600px) { .gallery-item { width: 100%; } }
+
+        footer {
+            background: rgba(0,0,0,0.8);
+            padding: 30px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🎨 OUSSAMA ART</h1>
+        <p>استكشف عالمي الفني </p>
+        <a href="https://www.instagram.com/l_ouss_d?igsh=MTYyb3V3ZmhpbjM1cw%3D%3D&utm_source=qr" target="_blank" class="insta-link">
+            <i class="fab fa-instagram"></i> تابعني للحصول على جديدي
+        </a>
+    </header>
+
+    <div class="gallery-container">
+        <div class="gallery-item"><img src="image1.jpg" alt="رسمة 1"></div>
+        <div class="gallery-item"><img src="image2.jpg" alt="رسمة 2"></div>
+        <div class="gallery-item"><img src="image3.jpg" alt="رسمة 3"></div>
+        <div class="gallery-item"><img src="image4.jpg" alt="رسمة 4"></div>
+        <div class="gallery-item"><img src="image5.jpg" alt="رسمة 5"></div>
+        <div class="gallery-item"><img src="image6.jpg" alt="رسمة 6"></div>
+        <div class="gallery-item"><img src="image7.jpg" alt="رسمة 7"></div>
+        <div class="gallery-item"><img src="image8.jpg" alt="رسمة 8"></div>
+        <div class="gallery-item"><img src="image9.jpg" alt="رسمة 9"></div>
+        <div class="gallery-item"><img src="image10.jpg" alt="رسمة 10"></div>
+        <div class="gallery-item"><img src="image11.jpg" alt="رسمة 11"></div>
+        <div class="gallery-item"><img src="image12.jpg" alt="رسمة 12"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 جميع الحقوق محفوظة - الفنان أسامة</p>
+    </footer>
+
+</body>
+</html>
